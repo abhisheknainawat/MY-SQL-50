@@ -4,3 +4,10 @@ SELECT product_id
 FROM Products 
 WHERE low_fats = 'Y' AND recyclable = 'Y';
 
+
+//leetcode article view 1 
+
+select distinct author_id as id from Views
+where author_id = viewer_id 
+order by id;
+
