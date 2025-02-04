@@ -15,3 +15,10 @@ order by id;
 SELECT tweet_id
 FROM Tweets
 WHERE CHAR_LENGTH(content)>15;
+
+//leetcode 1378
+# Write your MySQL query statement below
+SELECT euni.unique_id, e.name 
+FROM Employees e  
+LEFT JOIN EmployeeUNI euni  
+ON e.id = euni.id;
