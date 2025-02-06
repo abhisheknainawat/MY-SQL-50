@@ -37,3 +37,13 @@ SELECT p.product_name, s.year, s.price
 FROM Sales s  
 JOIN Product p  
 ON s.product_id = p.product_id;
+
+//1581 customer who visited but did not took any transaction
+SELECT v.customer_id, COUNT(v.visit_id) AS count_no_trans 
+from Visits v 
+LEFT JOIN Transactions t 
+ON v.visit_id = t.visit_id  
+WHERE t.transaction_id IS NULL 
+GROUP BY v.customer_id; 
+
+
