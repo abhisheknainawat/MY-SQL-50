@@ -47,3 +47,10 @@ WHERE t.transaction_id IS NULL
 GROUP BY v.customer_id; 
 
 
+//leetcode rising temprature 
+SELECT today.id
+FROM Weather yesterday 
+CROSS JOIN Weather today
+
+WHERE DATEDIFF(today.recordDate,yesterday.recordDate) = 1
+    AND today.temperature > yesterday.temperature
