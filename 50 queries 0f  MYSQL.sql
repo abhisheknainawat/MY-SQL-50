@@ -63,3 +63,10 @@ CROSS JOIN Weather today
 WHERE DATEDIFF(today.recordDate,yesterday.recordDate) = 1
     AND today.temperature > yesterday.temperature
 ;
+
+//leetcode 1661
+# Write your MySQL query statement below
+# Write your MySQL query statement below
+SELECT Employee.name,Bonus.bonus FROM Employee 
+LEFT JOIN Bonus ON Employee.empID = Bonus.empID
+WHERE bonus < 1000 OR Bonus IS NULL ;
