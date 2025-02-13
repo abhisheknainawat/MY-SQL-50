@@ -98,3 +98,5 @@ JOIN (
     GROUP BY managerId
     HAVING COUNT(*) >= 5
 ) E2 ON E1.id = E2.managerId;
+
+//14-02-2025
