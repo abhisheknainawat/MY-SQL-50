@@ -100,3 +100,9 @@ JOIN (
 ) E2 ON E1.id = E2.managerId;
 
 //14-02-2025
+//leetcode 19354
+SELECT A.user_id, 
+       ROUND(IFNULL(AVG(action = 'confirmed'), 0), 2) AS confirmation_rate
+FROM Signups AS A
+LEFT JOIN Confirmations AS B ON A.user_id = B.user_id
+GROUP BY A.user_id;
