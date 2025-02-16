@@ -107,7 +107,8 @@ FROM Signups AS A
 LEFT JOIN Confirmations AS B ON A.user_id = B.user_id
 GROUP BY A.user_id;
 
-//LEETCODE 620 not boring movie'
+//LEETCODE 620 boring movie
+
 SELECT id , movie , description , rating 
 FROM cinema 
 WHERE ID%2=1 && description != 'boring'
