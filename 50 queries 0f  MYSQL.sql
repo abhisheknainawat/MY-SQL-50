@@ -120,3 +120,12 @@ FROM Prices p LEFT JOIN UnitsSold u
 ON p.product_id = u.product_id AND
 u.purchase_date BETWEEN start_date AND end_date
 group by product_id
+
+//leetcode 1075 
+//project employee 1 
+
+SELECT p.project_id, ROUND(AVG(e.experience_years),2) AS average_years
+FROM Project p 
+LEFT JOIN Employee e
+ON p.employee_id = e.employee_id
+GROUP BY p.project_id
