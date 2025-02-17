@@ -130,3 +130,11 @@ FROM Project p
 LEFT JOIN Employee e
 ON p.employee_id = e.employee_id
 GROUP BY p.project_id
+
+//leetcode 1633
+SELECT 
+    contest_id, 
+    ROUND(COUNT(DISTINCT user_id) * 100 / (SELECT COUNT(user_id) FROM Users), 2) AS percentage
+FROM Register
+GROUP BY contest_id
+ORDER BY percentage DESC, contest_id;
