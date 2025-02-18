@@ -138,3 +138,6 @@ SELECT
 FROM Register
 GROUP BY contest_id
 ORDER BY percentage DESC, contest_id;
+
+//leetcode 1211 
+// queries quality and percentage 
