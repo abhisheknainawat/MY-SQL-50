@@ -175,3 +175,8 @@ on emp.reports_to = mgr.employee_id
 group by employee_id
 order by employee_id
 
+//lletcode 1729
+select user_id, count(follower_id) followers_count
+from Followers
+group by user_id
+order by user_id
