@@ -191,3 +191,13 @@ WHERE primary_flag='Y' OR
     FROM Employee
     Group by employee_id
     having count(employee_id)=1)
+
+    //leetcode 610
+    # Using UNION approach
+SELECT x, y, z, 'No' AS triangle 
+FROM Triangle
+WHERE x +y <= z OR x+z<=y OR y+z<=x
+UNION
+SELECT x, y, z, 'Yes' AS triangle 
+FROM Triangle
+WHERE x +y > z AND x+z>y AND y+z>x;
