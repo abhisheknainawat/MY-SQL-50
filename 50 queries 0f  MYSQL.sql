@@ -202,7 +202,7 @@ SELECT x, y, z, 'Yes' AS triangle
 FROM Triangle
 WHERE x +y > z AND x+z>y AND y+z>x;
 
-//leetcode 22 11 ee
+//leetcode 
 SELECT product_id 
 FROM Products 
 WHERE low_fats = 'Y' AND recyclable = 'Y';
