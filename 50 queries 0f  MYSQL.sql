@@ -202,7 +202,7 @@ SELECT x, y, z, 'Yes' AS triangle
 FROM Triangle
 WHERE x +y > z AND x+z>y AND y+z>x;
 
-//leetcode 18-03-25
+//leetcode 18-03-2025
 SELECT product_id 
 FROM Products 
 WHERE low_fats = 'Y' AND recyclable = 'Y';
