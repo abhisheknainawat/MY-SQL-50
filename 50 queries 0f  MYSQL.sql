@@ -203,6 +203,3 @@ FROM Triangle
 WHERE x +y > z AND x+z>y AND y+z>x;
 
 //leetcode 18-03-2025
-SELECT product_id 
-FROM Products 
-WHERE low_fats = 'Y' AND recyclable = 'Y';
